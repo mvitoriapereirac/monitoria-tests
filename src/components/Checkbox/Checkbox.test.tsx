@@ -21,7 +21,7 @@ describe("Checkbox", () => {
         await user.click(checkbox);
     
         expect(onChange).toHaveBeenCalledTimes(1);
-        expect(onChange.mock.calls).toEqual(true);
+        expect(onChange.mock.calls).toEqual([[true]]);
       })
 })
 
